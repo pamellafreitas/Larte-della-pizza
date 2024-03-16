@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/******** FONT *******/
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(./font/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+    font-weight: 400;
+ }
+
+ @font-face {
+    font-family: "Roboto Slab";
+    src: url(./font/Roboto_Slab/static/RobotoSlab-Medium.ttf);
+    font-weight: 500;
+ }
+
+@font-face {
+   font-family: "Roboto slab";
+   src: url(./font/Roboto_Slab/static/RobotoSlab-Bold.ttf);
+   font-weight: 700;
+}
+
+/***** Variaveis*****/
+
+:root {
+    --body-color: hsl(0, 100%, 98%);
+}
+
+ /******** Home **********/
+
+nav {
+    background-color: var(--body-color);
+    box-shadow: 0px 2px 2px 0px rgba(240, 142, 112, 0.10);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #AD2020;
+}
+
+ #home {
+    background-color: var(--body-color);
+    height: 16rem;
+    padding-top: 0.2rem;
+    margin-top: 4.7000rem;
+ }
+
+ .triangulo {
+    position: absolute;
+    float: right;
+    right: 0; 
+    width: 12rem;
+    height: 15.700rem;
+}
+
+
+
+.caixa-home {
+    width: 180px;
+    margin: 1rem 0rem 0rem 1.5rem;
+}
+
+.texto-pequeno {
+    margin-top: 1.563rem;
+    margin-bottom: 0.25rem;
+    font: 400 0.700rem 'Roboto Slab';
+    color: #AD2020;
+}
+
+.titulo-home {
+    margin-bottom: 0.5rem;
+    font: 700 1.35rem 'Roboto Slab';
+
+}
+
+.paragrafo-home {
+    font: 400 0.73rem 'Roboto Slab';
+    text-align: left;
+    line-height: 0.75rem;
+    color: #6E6767;
+}
+
+.btn-home {
+    border: none;
+    background-color: #AD2020;
+    padding: 0.4rem 1rem;
+    color: white;
+    border-radius: 0.2rem;
+    font: 400 0.850rem 'Roboto Slab';
+}
+
+#icon-seta{
+    padding-left: 0.2rem;
+}
+
+/******* About ****/
+
+#about {
+    margin-bottom: 3rem;
+}
+
+.titulo{
+    margin-top: -1rem;
+    margin-left: 0.5rem;
+}
+
+#about .texto-pequeno {
+    margin-left: 1rem;
+    font: 400 ;
+}
+
+#about #icon-sobre {
+   margin-bottom: 0.375rem;
+   width: 1.9rem;
+}
+
+#about h2 {
+    margin-top: 1.5rem;
+    text-align: center;
+    font: 700 1.5rem 'Roboto Slab';
+}
+ 
+#about h3 {
+    margin-left: 0.5rem;
+    font: 700 1.5rem 'Roboto Slab';
+}
+
+#text-about p {
+    font: 400 0.750rem 'Roboto Slab';
+    line-height: 0.90rem;
+    width: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6E6767;
+    
+}
+
+.imagem {
+    width: 15rem;
+    
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******Cardapio******/
+#cardapio {
+    padding-top: 0.5rem;
+    background-color: var(--body-color);
+    
+}
+
+#cardapio .texto-pequeno {
+    margin-top: 1.813rem;
+    margin-left: 1rem;
+    font: 400 ;
+}
+
+#cardapio #icon-cardapio {
+   margin-bottom: 0.375rem;
+   margin-left: 0.5rem;
+   width: 3rem;
+   display: inline-flex;
+}
+ 
+#cardapio h3 {
+    margin-left: -0.6rem;
+    font: 700 1.5rem 'Roboto Slab';
+    display: inline-flex;
+}
+
+#cardapio h4 {
+    font: 700 1rem 'Roboto Slab';
+    background-color: #AD2020;
+    color: white;
+    height: 1.75rem;
+    margin: 1rem 1rem 1rem ;
+    padding: 0.2rem 1rem;
+    text-align: center;
+
+}
+
+#cardapio .item img {
+    width: 9.625rem;
+}
+
+.wrap {
+    grid-column: 6 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#cardapio .item {
+    margin: -0.5rem auto;
+    width: 9.625rem;
+}
+
+.sabor {
+    font-size: 0.5rem;
+}
+
+#cardapio .btn-pedido img {
+    width: 1rem;
+}
+
+button.btn-pedido {
+    font: 400 0.750rem 'Roboto slab';
+    width: 7rem;
+    background-color: #AD2020;
+    color: white;
+    padding: 0.3rem;
+    margin-top: -1rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+p.sabor {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+span.reais {
+    font: 700 0.700rem 'Roboto Slab';
+    color: #AD2020;
+}
+
+span.valor {
+    font: 700 0.850rem 'Roboto Slab';
+    color: #AD2020;
+}
+
+#cardapio span {
+    float: right;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#cardapio h6{
+    display: inline-flex;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+   
+}
+
+/****** Contato *****/
+#contato {
+    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    
+}
+
+#contato #icon-contato {
+    margin-left: 1.5rem;
+    margin-right: 0.3rem;
+    width: 1.5rem;
+}
+
+#contato #titulo-contato {
+    margin-top: 1.5rem;
+    text-align: center;
+    font: 500 1.5rem 'Roboto Slab';
+}
+
+#contato #endereco{
+   display: inline-flex;
+   margin-left: 0.2rem;
+    
+}
+
+#contato #telefone{
+    display: inline-flex;
+    margin-left: 0.2rem;
+     
+ }
+
+ #texto-contato {
+    width: 22rem;
+    margin: 1rem auto;
+    padding-left: 1rem;
+  
+ }
+
+ #icon-local {
+    width: 1.5rem;
+ }
+
+ #icon-telefone {
+    width: 1.750rem;
+ }
+
+ /****** Footer *****/
+
+ footer {
+    background-color: #AD2020;
+    height: 7rem;
+ }
+
+ #icon-logo {
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: -2.5rem;
+ }
+
+ #icones {
+    margin-top: -1rem;
+    margin-right: 3rem;
+    float: right;
+ }
+
+ #icones img {
+    width: 1.2rem;
+    
+ }
+
+#direitos {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font: 400 0.800rem 'Roboto Slab';
+    color: white;
+ }
+
+
+
+ /******* Responsive ********/
+ @media (max-width: 370px) {
+ .triangulo img{
+    position: absolute;
+    float: right;
+    right: 0; 
+    width: 13rem;
+    height: 15.700rem;
+ }
+}
+
+ @media (min-width: 480px) {
+
+ /******* Home  ********/
+    #home {
+        background-color: var(--body-color);
+        height: 19.900rem;
+        padding-top: 0.1rem;
+        margin-top: 4.7000rem;
+     }
+
+    .triangulo {
+        position: absolute;
+        float: right;
+        right: 0;
+        width: 19rem;
+        height: 19.800rem;
+    }
+
+    .caixa-home {
+        width: 13.5rem;
+        margin: 2rem 0rem 0rem 1.5rem;
+    }
+
+    .texto-pequeno {
+        font: 400 0.850rem 'Roboto Slab';
+        color: #AD2020;
+    }
+    
+    .titulo-home {
+        margin-bottom: 0.4rem;
+        font: 700 1.5rem 'Roboto Slab';
+    
+    }
+    
+    .paragrafo-home {
+        font: 400 0.700rem 'Roboto Slab';
+        text-align: left;
+        line-height: 1.2rem;
+    }
+
+    .btn-home {
+        margin-top: 1rem;
+    }
+    
+
+}
+
+@media (min-width: 650px) {
+
+    /******* Home  ********/
+
+   
+    .triangulo {
+        position: absolute;
+        float: right;
+        right: 0;
+        width: 24rem;
+        height: 19.800rem;
+    }
+       .caixa-home {
+           width: 20rem;
+           margin: 2rem 0rem 0rem 2rem;
+       }
+   
+       .texto-pequeno {
+           font: 400 1rem 'Roboto Slab';
+           color: #AD2020;
+       }
+       
+       .titulo-home {
+           margin-bottom: 0.4rem;
+           font: 700 2.4rem 'Roboto Slab';
+       
+       }
+       
+       .paragrafo-home {
+           font: 400 0.7rem 'Roboto Slab';
+           text-align: left;
+           line-height: 1.3rem;
+       }
+   
+       .btn-home {
+           margin-top: 0.5rem;
+           padding: 0.3rem 1rem;
+           color: white;
+           border-radius: 0.2rem;
+           font: 400 1rem 'Roboto Slab';
+       }
+   
+       /******* Sobre *******/
+        
+        #about h2 {
+            margin-top: 1.5rem;
+            text-align: center;
+            font: 700 1.800rem 'Roboto Slab';
+        }
+   
+        #text-about p {
+           font: 400 0.850rem 'Roboto Slab';
+           line-height: 1.2rem;
+     }
+   
+   
+   }
+
+   @media (min-width: 850px) {
+
+    /******* Nav ********/
+
+    nav {
+        background-color: var(--body-color);
+        box-shadow: 0px 2px 2px 0px rgba(240, 142, 112, 0.10);
+    }
+
+    a.nav-item {
+        margin-left: 6rem;
+    }
+    
+    nav a {
+        margin-left: 3rem;
+    }
+
+    a img{
+        width:6rem;
+        margin-left: 3rem;
+    }
+  
+    /******* Home  ********/
+    #home {
+        background-color: var(--body-color);
+        height: 30rem;
+    }
+
+    .triangulo {
+        position: absolute;
+        float: right;
+        right: 0;
+        width: 35rem;
+        height: 30rem;
+    }
+    .caixa-home {
+        width: 25rem;
+        margin: 3rem 0rem 0rem 4rem;
+    }
+
+    .texto-pequeno {
+        font: 400 1rem 'Roboto Slab';
+        color: #AD2020;
+    }
+
+    .titulo-home {
+        margin-bottom: 0.4rem;
+        font: 700 3rem 'Roboto Slab';
+
+    }
+
+    .paragrafo-home {
+        font: 400 1rem 'Roboto Slab';
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    .btn-home {
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        color: white;
+        border-radius: 0.2rem;
+        font: 400 1rem 'Roboto Slab';
+    }
+
+       /****** About *****/
+    
+    #about .texto-pequeno {
+        margin-left: 1rem;
+        font: 400 'Roboto Slab';
+    }
+    
+    #about #icon-sobre {
+        margin-bottom: 0.375rem;
+        width: 1.9rem;
+    }
+    
+    #about h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font: 700 2rem 'Roboto Slab';
+    }
+    
+    #about h3 {
+        margin-left: 0.5rem;
+        font: 700 1.5rem 'Roboto Slab';
+    }
+    
+    #text-about p {
+        font: 400 1rem 'Roboto Slab';
+        line-height: 1.3rem;
+        width: 28rem;
+  
+        
+    }
+    
+    .imagem {
+        width: 18rem;
+    }
+
+    /***** Footer *****/
+    #icon-logo {
+        margin-left: 4.5rem;
+    }
+
+    #direitos {
+        margin-left: 4.5rem;
+    }   
+
+    /****** Cardápio *******/
+
+    #cardapio {
+        padding-top: 0.5rem;
+        background-color: var(--body-color);
+        
+    }
+    
+    
+    #cardapio h4 {
+        font: 700 1.5rem 'Roboto Slab';
+        background-color: #AD2020;
+        color: white;
+        height: 2.5rem;
+        margin: 1rem 1rem 1rem ;
+        padding: 0.2rem 1rem;
+        text-align: center;
+    
+    }
+    
+    #cardapio .item img {
+        width: 12rem;
+    }
+    
+    .wrap {
+        grid-column: 6 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #cardapio .item {
+        margin: 0.5rem auto;
+        width: 12rem;
+    }
+    
+    .sabor {
+        font-size: 0.5rem;
+    }
+    
+    #cardapio .btn-pedido img {
+        width: 1rem;
+    }
+    
+    button.btn-pedido {
+        font: 400 0.750rem 'Roboto slab';
+        width: 7rem;
+        background-color: #AD2020;
+        color: white;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        border: none;
+        border-radius: 0.2rem;
+    }
+    
+    p.sabor {
+        opacity: 0;
+        visibility: hidden;
+    
+    }
+    
+    span.reais {
+        font: 700 0.700rem 'Roboto Slab';
+        color: #AD2020;
+    }
+    
+    span.valor {
+        font: 700 0.850rem 'Roboto Slab';
+        color: #AD2020;
+    }
+    
+    #cardapio span {
+        float: right;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    #cardapio h6{
+        display: inline-flex;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+
+    }
+
+    /***** Contato ******/
+
+    .titulo {
+    
+        margin-left: 3rem;
+    }
+ }
+
+@media (min-width: 1300px) {
+
+
+    /******* Home  ********/
+    #home {
+        background-color: var(--body-color);
+        height: 45rem;
+        padding-top: 0.1rem;
+        margin-top: 4.7000rem;
+    }
+
+    .triangulo {
+        position: absolute;
+        float: right;
+        right: 0;
+        width: 50rem;
+        height: 45rem;
+    }
+
+    .caixa-home {
+        width: 40rem;
+        margin: 8rem 0rem 0rem 6rem;
+    }
+
+    .texto-pequeno {
+        font: 400 1rem 'Roboto Slab';
+        color: #AD2020;
+    }
+    
+    .titulo-home {
+        margin-bottom: 0.rem;
+        font: 700 4rem 'Roboto Slab';
+    
+    }
+    
+    .paragrafo-home {
+        font: 400 1.5rem 'Roboto Slab';
+        text-align: left;
+        line-height: 1.8rem;
+    }
+
+    .btn-home {
+        margin-top: 5rem;
+        padding: 0.6rem 2rem;
+        color: white;
+        border-radius: 0.2rem;
+        font: 400 1.25rem 'Roboto Slab';
+    }
+
+       /****** About *****/
+    .titulo {
+        margin-left: 5rem;
+    }
+    
+    #about .texto-pequeno {
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        font: 400 ;
+    }
+    
+    #about #icon-sobre {
+        margin-bottom: 0.375rem;
+        width: 2rem;
+    }
+    
+    #about h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font: 700 2rem 'Roboto Slab';
+    }
+     
+    #about h3 {
+        margin-left: 0.5rem;
+        font: 700 1.5rem 'Roboto Slab';
+    }
+    
+    #text-about p {
+        font: 400 1.5rem 'Roboto Slab';
+        width: 38rem;
+  
+        
+    }
+    
+    .imagem {
+        width: 18rem;
+    }
+ }
