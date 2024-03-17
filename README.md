@@ -32,7 +32,7 @@ Este repositório contém o código-fonte de uma página web responsiva para um 
 
 ## Autor
 
-Este projeto foi desenvolvido por [Seu Nome].
+Este projeto foi desenvolvido por Pamella Freitas.
 
 ## Licença
 
